@@ -12,4 +12,3 @@ node_modules
 connector.php
 .jshintrc
 .idea
-composer.lock
