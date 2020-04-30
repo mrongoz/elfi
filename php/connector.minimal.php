@@ -55,7 +55,7 @@ elFinder::$netDrivers['ftp'] = 'FTP';
 
 // // Required for Google Drive network mount
 // // Installation by composer
-composer require google/apiclient:^2.0
+php composer.phar require google/apiclient:^2.0
 // // Enable network mount
 elFinder::$netDrivers['googledrive'] = 'GoogleDrive';
 // // GoogleDrive Netmount driver need next two settings. You can get at https://console.developers.google.com
@@ -69,7 +69,7 @@ define('582424178204-l97bhrfb5f2gcndvt0llr5nc84p9ccqj.apps.googleusercontent.com
 
 // // Required for Google Drive network mount with Flysystem
 // // Installation by composer
-composer require nao-pon/flysystem-google-drive:~1.1 nao-pon/elfinder-flysystem-driver-ext
+php composer.phar require nao-pon/flysystem-google-drive:~1.1 nao-pon/elfinder-flysystem-driver-ext
 // // Enable network mount
 elFinder::$netDrivers['googledrive'] = 'FlysystemGoogleDriveNetmount';
 // // GoogleDrive Netmount driver need next two settings. You can get at https://console.developers.google.com
