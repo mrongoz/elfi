@@ -55,28 +55,28 @@ elFinder::$netDrivers['ftp'] = 'FTP';
 
 // // Required for Google Drive network mount
 // // Installation by composer
-// // `composer require google/apiclient:^2.0` on php directory
+composer require google/apiclient:^2.0
 // // Enable network mount
-// elFinder::$netDrivers['googledrive'] = 'GoogleDrive';
+elFinder::$netDrivers['googledrive'] = 'GoogleDrive';
 // // GoogleDrive Netmount driver need next two settings. You can get at https://console.developers.google.com
 // // AND require register redirect url to "YOUR_CONNECTOR_URL?cmd=netmount&protocol=googledrive&host=1"
 // // If the elFinder HTML element ID is not "elfinder", you need to change "host=1" to "host=ElementID"
-// define('ELFINDER_GOOGLEDRIVE_CLIENTID',     '');
-// define('ELFINDER_GOOGLEDRIVE_CLIENTSECRET', '');
+define('582424178204-l97bhrfb5f2gcndvt0llr5nc84p9ccqj.apps.googleusercontent.com',     '');
+// define('jv-_Dme-CmE8-0crvwna4t6v', '');
 // // Required case when Google API is NOT added via composer
 // define('ELFINDER_GOOGLEDRIVE_GOOGLEAPICLIENT', '/path/to/google-api-php-client/vendor/autoload.php');
 // ===============================================
 
 // // Required for Google Drive network mount with Flysystem
 // // Installation by composer
-// // `composer require nao-pon/flysystem-google-drive:~1.1 nao-pon/elfinder-flysystem-driver-ext` on php directory
+composer require nao-pon/flysystem-google-drive:~1.1 nao-pon/elfinder-flysystem-driver-ext
 // // Enable network mount
-// elFinder::$netDrivers['googledrive'] = 'FlysystemGoogleDriveNetmount';
+elFinder::$netDrivers['googledrive'] = 'FlysystemGoogleDriveNetmount';
 // // GoogleDrive Netmount driver need next two settings. You can get at https://console.developers.google.com
 // // AND require register redirect url to "YOUR_CONNECTOR_URL?cmd=netmount&protocol=googledrive&host=1"
 // // If the elFinder HTML element ID is not "elfinder", you need to change "host=1" to "host=ElementID"
-// define('ELFINDER_GOOGLEDRIVE_CLIENTID',     '');
-// define('ELFINDER_GOOGLEDRIVE_CLIENTSECRET', '');
+define('582424178204-l97bhrfb5f2gcndvt0llr5nc84p9ccqj.apps.googleusercontent.com',     '');
+// define('jv-_Dme-CmE8-0crvwna4t6v', '');
 // // And "php/.tmp" directory must exist and be writable by PHP.
 // ===============================================
 
@@ -84,7 +84,7 @@ elFinder::$netDrivers['ftp'] = 'FTP';
 // //  * cURL PHP extension required
 // //  * HTTP server PATH_INFO supports required
 // // Enable network mount
-// elFinder::$netDrivers['onedrive'] = 'OneDrive';
+//elFinder::$netDrivers['onedrive'] = 'OneDrive';
 // // GoogleDrive Netmount driver need next two settings. You can get at https://dev.onedrive.com
 // // AND require register redirect url to "YOUR_CONNECTOR_URL/netmount/onedrive/1"
 // // If the elFinder HTML element ID is not "elfinder", you need to change "/1" to "/ElementID"
